@@ -17,6 +17,7 @@ main() {
 	local copy_command="$(clipboard_copy_command)"
 	# $copy_command below should not be quoted
 	pane_current_path | tr -d '\n' | $copy_command
+	# ( echo -n "test6" | xclip -selection clipboard )
 	display_notice
 }
 main
